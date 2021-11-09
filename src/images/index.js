@@ -2,11 +2,9 @@ import eth from './platforms/eth.png'
 import bsc from './platforms/bsc.png'
 import huobi from './platforms/huobi.png'
 import matic from './platforms/matic.png'
-import team from './advantages/team.svg'
-import community from './advantages/community.png'
-import upgradeable from './advantages/upgradeable.png'
-import purposeful from './advantages/purposeful.png'
-import crypto from './advantages/crypto.png'
+import community from './advantages/community.webp'
+import upgradeable from './advantages/upgradeable.webp'
+import purposeful from './advantages/purposeful.webp'
 import burger from './icons/burger.svg'
 import earth from './icons/earth.svg'
 import atomBook from './icons/atomBook.png'
@@ -55,8 +53,6 @@ export const images = {
   bsc,
   huobi,
   matic,
-  team,
-  crypto,
   burger,
   earth,
   atomBook,

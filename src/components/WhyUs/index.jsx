@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Box, Container, Grid, Typography, useMediaQuery, useTheme } from '@material-ui/core'
 import Icon from '../../ui/Icon'
@@ -25,7 +25,6 @@ const tabs = [
 ]
 
 const WhyUs = () => {
-  const [active, setActive] = useState(1)
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   const classes = useStyles()
@@ -36,13 +35,13 @@ const WhyUs = () => {
             <Grid container spacing={2} alignItems="center">
                 {tabs.map((tab, index) => (
                     <Grid item sm={6} md={4} key={index}>
-                        <Box minHeight={isMobile ? 120 : 200} borderRadius={isMobile ? 16 : 36} onClick={() => setActive(index)} onMouseEnter={() => setActive(index)} p={isMobile ? 3 : 5} bgcolor={index === active ? customTheme.color.purple : 'transparent'} className={classes.box}>
-                            <Icon type={tab.img} color={index === active ? customTheme.color.white : customTheme.color.night}/>
+                        <Box minHeight={isMobile ? 120 : 200} borderRadius={isMobile ? 16 : 36} p={isMobile ? 3 : 5} bgcolor='transparent' className={classes.box}>
+                            <Icon type={tab.img} color={customTheme.color.night}/>
                             <Box py={1}>
-                                <Typography variant="body1" color={index === active ? 'error' : 'primary'}>{tab.title}</Typography>
+                                <Typography variant="body1" color='primary'>{tab.title}</Typography>
                             </Box>
                             <Box py={1}>
-                                <Typography variant="body2" color={index === active ? 'error' : 'textSecondary'}>{tab.desc}</Typography>
+                                <Typography variant="body2" color='textSecondary'>{tab.desc}</Typography>
                             </Box>
                         </Box>
                     </Grid>
