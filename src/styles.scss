@@ -1,0 +1,65 @@
+@import "normalize";
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mh10 {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.max-width-100 {
+  max-width: 100%;
+}
+
+.w160 {
+  width: 160px;
+}
+
+body {
+  margin: 0;
+  background: #FCFCFD;
+  font-family: 'Montserrat', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
